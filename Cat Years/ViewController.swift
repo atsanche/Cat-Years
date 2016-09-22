@@ -17,6 +17,14 @@ extension UIView {
         animation.duration = duration
         self.layer.add(animation, forKey: kCATransitionPush)
     }
+    /*func pushTransitionDown(duration:CFTimeInterval) {
+        let animation: CATransition = CATransition()
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.type = kCATransti
+        animation.subtype = kCATransitionFromBottom
+        animation.duration = duration
+        self.layer.add(animation, forkey: kCATransitionPush)
+    }*/
 }
 
 class ViewController: UIViewController {
@@ -44,7 +52,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         numberToolbar.barStyle = UIBarStyle.blackTranslucent
         numberToolbar.items=[
-            UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.cancel)),
+            UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.notAccept)),
             UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil),
             UIBarButtonItem(title: "Apply", style: UIBarButtonItemStyle.plain, target:self, action: #selector(ViewController.accept))
         ]
@@ -57,7 +65,7 @@ class ViewController: UIViewController {
         textInput.resignFirstResponder()
     }
     
-    func cancel () {
+    func notAccept () {
         textInput.text=""
         textInput.resignFirstResponder()
     }
