@@ -1,26 +1,128 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Years" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone Grass" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-r9-6yb"/>
+                            <view alpha="0.65000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aan-2k-zKL" userLabel="Top View">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QG6-Jd-nXz" userLabel="App Title">
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How old is your cat?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOh-73-C8H" userLabel="App Description">
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="QG6-Jd-nXz" firstAttribute="width" secondItem="Aan-2k-zKL" secondAttribute="width" id="A5a-IO-TnK"/>
+                                    <constraint firstItem="QG6-Jd-nXz" firstAttribute="centerX" secondItem="Aan-2k-zKL" secondAttribute="centerX" id="e7p-ON-CoD"/>
+                                    <constraint firstItem="KOh-73-C8H" firstAttribute="centerY" secondItem="Aan-2k-zKL" secondAttribute="centerY" constant="42" id="oNs-eM-E5n"/>
+                                    <constraint firstItem="KOh-73-C8H" firstAttribute="width" secondItem="Aan-2k-zKL" secondAttribute="width" id="v5o-UP-UMU"/>
+                                    <constraint firstItem="KOh-73-C8H" firstAttribute="centerX" secondItem="Aan-2k-zKL" secondAttribute="centerX" id="wdz-Ke-J26"/>
+                                    <constraint firstItem="QG6-Jd-nXz" firstAttribute="centerY" secondItem="Aan-2k-zKL" secondAttribute="centerY" id="yvK-rC-PxF"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eB-Jd-6Gz" userLabel="Bottom View">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a valid age in years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-fU-OYi">
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="centerX" secondItem="1eB-Jd-6Gz" secondAttribute="centerX" id="Csu-Ij-qes"/>
+                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="height" secondItem="1eB-Jd-6Gz" secondAttribute="height" id="cl1-G6-AZr"/>
+                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="width" secondItem="1eB-Jd-6Gz" secondAttribute="width" id="q5h-aK-jOY"/>
+                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="centerY" secondItem="1eB-Jd-6Gz" secondAttribute="centerY" id="x5E-OQ-lFR"/>
+                                </constraints>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdH-Ie-Rue">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="WHH-aH-IXy">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgk-Gb-2sD" userLabel="Submit Button">
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <state key="normal" title="Submit">
+                                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TKO-ZK-eog"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="zgk-Gb-2sD" firstAttribute="width" secondItem="JdH-Ie-Rue" secondAttribute="width" id="2BW-iq-h1G"/>
+                                    <constraint firstItem="zgk-Gb-2sD" firstAttribute="centerX" secondItem="JdH-Ie-Rue" secondAttribute="centerX" id="9C7-f8-oZV"/>
+                                    <constraint firstItem="zgk-Gb-2sD" firstAttribute="centerY" secondItem="JdH-Ie-Rue" secondAttribute="centerY" id="RUh-QZ-4v2"/>
+                                    <constraint firstItem="zgk-Gb-2sD" firstAttribute="height" secondItem="JdH-Ie-Rue" secondAttribute="height" id="kEx-Ve-bbd"/>
+                                </constraints>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-0Y-go1" userLabel="Text Input">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aan-2k-zKL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="8OO-HR-LKL"/>
+                            <constraint firstItem="JdH-Ie-Rue" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9UG-3y-EHo"/>
+                            <constraint firstItem="1eB-Jd-6Gz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="HpD-Es-qN5"/>
+                            <constraint firstItem="1eB-Jd-6Gz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MK1-HC-sel"/>
+                            <constraint firstItem="JdH-Ie-Rue" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="S14-wc-ljY"/>
+                            <constraint firstItem="1eB-Jd-6Gz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wy1-SA-Xfc"/>
+                            <constraint firstItem="JdH-Ie-Rue" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="32" id="aUr-wT-rcG"/>
+                            <constraint firstItem="Aan-2k-zKL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="awK-8y-Jfc"/>
+                            <constraint firstItem="Aan-2k-zKL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjf-9n-xi3"/>
+                            <constraint firstItem="YAb-r9-6yb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hyw-fc-JR1"/>
+                            <constraint firstItem="JdH-Ie-Rue" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="lfg-cH-6jd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1eB-Jd-6Gz" secondAttribute="bottom" id="pF3-Oe-KR7"/>
+                            <constraint firstItem="YAb-r9-6yb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pnQ-Gy-E7T"/>
+                            <constraint firstItem="lI4-0Y-go1" firstAttribute="width" secondItem="JdH-Ie-Rue" secondAttribute="width" id="sFF-cO-b1P"/>
+                            <constraint firstItem="YAb-r9-6yb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="sZ4-57-bEB"/>
+                            <constraint firstItem="lI4-0Y-go1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u36-fF-vAM"/>
+                            <constraint firstItem="YAb-r9-6yb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vqf-RF-OTo"/>
+                            <constraint firstItem="zgk-Gb-2sD" firstAttribute="top" secondItem="lI4-0Y-go1" secondAttribute="bottom" constant="26.333333333333314" id="xbY-q0-rHF"/>
+                            <constraint firstItem="Aan-2k-zKL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="zla-zt-aqA"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textInput" destination="lI4-0Y-go1" id="A2I-YA-zZf"/>
+                        <outlet property="textOutput" destination="Oeu-fU-OYi" id="C7g-6h-8xO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="110.14492753623189" y="119.83695652173914"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="iPhone Grass" width="1819" height="1211"/>
+    </resources>
 </document>
