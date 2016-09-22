@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIView {
-    func pushTransitionUp(duration:CFTimeInterval) {
+    func pushTransitionUp(_ duration:CFTimeInterval) {
         let animation:CATransition = CATransition()
         animation.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseInEaseOut)
         animation.type = kCATransitionPush
@@ -29,12 +29,12 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: AnyObject) {
         print(textInput)
         if (textInput.text?.isEmpty)! {
-            textOutput.pushTransitionUp(duration: 1.0)
+            textOutput.pushTransitionUp(1.0)
         } else {
             var answer:Int = Int(textInput.text!)!
             answer = answer * 7
             
-            textOutput.pushTransitionUp(duration: 0.6)
+            textOutput.pushTransitionUp(0.6)
             textOutput.text = "\(answer) Years Old"//print(answer)
         }
     }
