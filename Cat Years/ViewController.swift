@@ -17,14 +17,6 @@ extension UIView {
         animation.duration = duration
         self.layer.add(animation, forKey: kCATransitionPush)
     }
-    /*func pushTransitionDown(duration:CFTimeInterval) {
-        let animation: CATransition = CATransition()
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        animation.type = kCATransti
-        animation.subtype = kCATransitionFromBottom
-        animation.duration = duration
-        self.layer.add(animation, forkey: kCATransitionPush)
-    }*/
 }
 
 class ViewController: UIViewController {
@@ -52,20 +44,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         numberToolbar.barStyle = UIBarStyle.blackTranslucent
         numberToolbar.items=[
-            UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.bordered, target: self, action: #selector(ViewController.hoopla)),
+            UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.cancel)),
             UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil),
-            UIBarButtonItem(title: "Apply", style: UIBarButtonItemStyle.bordered, target:self, action: #selector(ViewController.boopla))
+            UIBarButtonItem(title: "Apply", style: UIBarButtonItemStyle.plain, target:self, action: #selector(ViewController.accept))
         ]
         numberToolbar.sizeToFit()
         textInput.inputAccessoryView = numberToolbar
         
     }
     
-    func boopla () {
+    func accept () {
         textInput.resignFirstResponder()
     }
     
-    func hoopla () {
+    func cancel () {
         textInput.text=""
         textInput.resignFirstResponder()
     }
