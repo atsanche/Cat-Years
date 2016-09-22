@@ -37,13 +37,13 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: AnyObject) {
         print(textInput)
         if (textInput.text?.isEmpty)! {
-            textOutput.pushTransitionUp(duration: 1.0)
+            textOutput.pushTransitionUp(duration: 0.8)
         } else {
             var answer:Int = Int(textInput.text!)!
             answer = answer * 7
             
             textOutput.pushTransitionUp(duration: 0.6)
-            textOutput.text = "\(answer) Years Old"//print(answer)
+            textOutput.text = "\(answer) Years Old"
         }
     }
     
@@ -52,13 +52,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         numberToolbar.barStyle = UIBarStyle.blackTranslucent
         numberToolbar.items=[
-<<<<<<< HEAD
             UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.notAccept)),
-=======
-            UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.bordered, target: self, action: #selector(ViewController.hoopla)),
->>>>>>> parent of e5ecf0d... Commit 1
             UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil),
-            UIBarButtonItem(title: "Apply", style: UIBarButtonItemStyle.bordered, target:self, action: #selector(ViewController.boopla))
+            UIBarButtonItem(title: "Apply", style: UIBarButtonItemStyle.plain, target:self, action: #selector(ViewController.boopla))
         ]
         numberToolbar.sizeToFit()
         textInput.inputAccessoryView = numberToolbar
@@ -69,11 +65,8 @@ class ViewController: UIViewController {
         textInput.resignFirstResponder()
     }
     
-<<<<<<< HEAD
+
     func notAccept () {
-=======
-    func hoopla () {
->>>>>>> parent of e5ecf0d... Commit 1
         textInput.text=""
         textInput.resignFirstResponder()
     }
