@@ -194,20 +194,17 @@
 					24738C911D92F45400C1B1F3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YPMESZYF4S;
-						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					24738CA51D92F45400C1B1F3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YPMESZYF4S;
-						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 24738C911D92F45400C1B1F3;
 					};
 					24738CB01D92F45400C1B1F3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = YPMESZYF4S;
-						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 24738C911D92F45400C1B1F3;
 					};
@@ -517,7 +514,6 @@
 				24738CBC1D92F45400C1B1F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		24738CBD1D92F45400C1B1F3 /* Build configuration list for PBXNativeTarget "Cat YearsTests" */ = {
 			isa = XCConfigurationList;
@@ -526,7 +522,6 @@
 				24738CBF1D92F45400C1B1F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		24738CC01D92F45400C1B1F3 /* Build configuration list for PBXNativeTarget "Cat YearsUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,7 +530,6 @@
 				24738CC21D92F45400C1B1F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
