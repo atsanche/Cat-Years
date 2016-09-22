@@ -52,20 +52,28 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         numberToolbar.barStyle = UIBarStyle.blackTranslucent
         numberToolbar.items=[
+<<<<<<< HEAD
             UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.plain, target: self, action: #selector(ViewController.notAccept)),
+=======
+            UIBarButtonItem(title:"Cancel", style: UIBarButtonItemStyle.bordered, target: self, action: #selector(ViewController.hoopla)),
+>>>>>>> parent of e5ecf0d... Commit 1
             UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: self, action: nil),
-            UIBarButtonItem(title: "Apply", style: UIBarButtonItemStyle.plain, target:self, action: #selector(ViewController.accept))
+            UIBarButtonItem(title: "Apply", style: UIBarButtonItemStyle.bordered, target:self, action: #selector(ViewController.boopla))
         ]
         numberToolbar.sizeToFit()
         textInput.inputAccessoryView = numberToolbar
         
     }
     
-    func accept () {
+    func boopla () {
         textInput.resignFirstResponder()
     }
     
+<<<<<<< HEAD
     func notAccept () {
+=======
+    func hoopla () {
+>>>>>>> parent of e5ecf0d... Commit 1
         textInput.text=""
         textInput.resignFirstResponder()
     }
