@@ -6,8 +6,8 @@
 //  Copyright © 2016 Abel Sanchez. All rights reserved.
 //
 
+
 import XCTest
-@testable import Cat_Years
 
 class Cat_YearsTests: XCTestCase {
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iPhone Grass" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-r9-6yb"/>
@@ -41,22 +41,6 @@
                                     <constraint firstItem="KOh-73-C8H" firstAttribute="width" secondItem="Aan-2k-zKL" secondAttribute="width" id="v5o-UP-UMU"/>
                                     <constraint firstItem="KOh-73-C8H" firstAttribute="centerX" secondItem="Aan-2k-zKL" secondAttribute="centerX" id="wdz-Ke-J26"/>
                                     <constraint firstItem="QG6-Jd-nXz" firstAttribute="centerY" secondItem="Aan-2k-zKL" secondAttribute="centerY" id="yvK-rC-PxF"/>
-                                </constraints>
-                            </view>
-                            <view alpha="0.64999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eB-Jd-6Gz" userLabel="Bottom View">
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a valid age in years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-fU-OYi">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="centerX" secondItem="1eB-Jd-6Gz" secondAttribute="centerX" id="Csu-Ij-qes"/>
-                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="height" secondItem="1eB-Jd-6Gz" secondAttribute="height" id="cl1-G6-AZr"/>
-                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="width" secondItem="1eB-Jd-6Gz" secondAttribute="width" id="q5h-aK-jOY"/>
-                                    <constraint firstItem="Oeu-fU-OYi" firstAttribute="centerY" secondItem="1eB-Jd-6Gz" secondAttribute="centerY" id="x5E-OQ-lFR"/>
                                 </constraints>
                             </view>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdH-Ie-Rue">
@@ -88,21 +72,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jGf-ux-PzU" userLabel="slideshow" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <frame key="frameInset" minY="467" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.82069705310880825" green="0.82069705310880825" blue="0.82069705310880825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter a valid age in years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oeu-fU-OYi">
+                                <frame key="frameInset" minY="467" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Aan-2k-zKL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="8OO-HR-LKL"/>
                             <constraint firstItem="JdH-Ie-Rue" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9UG-3y-EHo"/>
-                            <constraint firstItem="1eB-Jd-6Gz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="HpD-Es-qN5"/>
-                            <constraint firstItem="1eB-Jd-6Gz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MK1-HC-sel"/>
                             <constraint firstItem="JdH-Ie-Rue" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="S14-wc-ljY"/>
-                            <constraint firstItem="1eB-Jd-6Gz" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Wy1-SA-Xfc"/>
                             <constraint firstItem="JdH-Ie-Rue" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="32" id="aUr-wT-rcG"/>
                             <constraint firstItem="Aan-2k-zKL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="awK-8y-Jfc"/>
                             <constraint firstItem="Aan-2k-zKL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hjf-9n-xi3"/>
                             <constraint firstItem="YAb-r9-6yb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hyw-fc-JR1"/>
                             <constraint firstItem="JdH-Ie-Rue" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="lfg-cH-6jd"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1eB-Jd-6Gz" secondAttribute="bottom" id="pF3-Oe-KR7"/>
                             <constraint firstItem="YAb-r9-6yb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pnQ-Gy-E7T"/>
                             <constraint firstItem="lI4-0Y-go1" firstAttribute="width" secondItem="JdH-Ie-Rue" secondAttribute="width" id="sFF-cO-b1P"/>
                             <constraint firstItem="YAb-r9-6yb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="sZ4-57-bEB"/>
@@ -113,13 +105,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="slideshow" destination="jGf-ux-PzU" id="mAx-de-PhQ"/>
                         <outlet property="textInput" destination="lI4-0Y-go1" id="A2I-YA-zZf"/>
                         <outlet property="textOutput" destination="Oeu-fU-OYi" id="C7g-6h-8xO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="110.14492753623189" y="119.83695652173914"/>
+            <point key="canvasLocation" x="109.59999999999999" y="119.1904047976012"/>
         </scene>
     </scenes>
     <resources>
